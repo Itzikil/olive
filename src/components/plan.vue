@@ -7,7 +7,9 @@
                 <h3>{{ plan.title }}</h3>
                 <p class="description">{{ plan.description }}</p>
                 <ul>
-                    <li v-for="(feature, i) in plan.features" :key="i">✅ {{ feature }}</li>
+                    <li v-for="(feature, i) in plan.features" :key="i">
+                        <div class="dot"></div> {{ feature }}
+                    </li>
                 </ul>
                 <p class="price">{{ plan.price }}</p>
                 <button @click="selectPlan(plan.id)">הצטרפי עכשיו</button>

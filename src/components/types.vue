@@ -1,7 +1,8 @@
 <template>
     <section id="types">
         <div class="types-container">
-            <div>
+            <div class="type-container">
+                <img src="../assets/imgs/pilates.svg" alt="">
                 <h2>פילאטיס</h2>
                 <p>
                     בסטודיו האינטימי והמעוצב שלנו, תוכלי ליהנות משיעורי פילאטיס בקבוצות קטנות עם יחס אישי, או להתאמן
@@ -12,7 +13,8 @@
                 </p>
             </div>
 
-            <div>
+            <div class="type-container">
+                <img src="../assets/imgs/gym.svg" alt="">
                 <h2>כח</h2>
                 <p>
                     תוכנית האימונים שלנו לנשים מיועדת לבניית גוף חזק, חטוב ובריא – בדרך אלגנטית ומותאמת אישית.

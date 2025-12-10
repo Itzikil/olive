@@ -1,0 +1,17 @@
+.recommandations-container {
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .rec-container {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+
+        img {
+            width: calc(25% - 12px);
+            min-width: 150px;
+            border-radius: 10px;
+        }
+    }
+}

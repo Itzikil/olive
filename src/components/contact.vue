@@ -1,6 +1,6 @@
 <template>
     <section class="contact-container" id="contact">
-        <h2>contact</h2>
+        <h2>צרו קשר</h2>
         <p>הרא”ה 34, רמת גן</p>
         <p>054-1234567</p>
         <div class="link-container">
