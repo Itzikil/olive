@@ -11,13 +11,13 @@
         </div>
         <nav :class="{ 'close-menu': !mobileMenu }">
             <a @click.prevent="scrollTo('about')">עלינו</a>
+            <a @click.prevent="scrollTo('gallery')">גלריה</a>
             <a @click.prevent="scrollTo('types')">סוגי אימון</a>
             <a @click.prevent="scrollTo('schedule')">מערכת שעות</a>
             <a @click.prevent="scrollTo('plan')">מסלולים</a>
-            <a @click.prevent="scrollTo('home')">הטבה למצטרפות חדשות</a>
+            <!-- <a @click.prevent="scrollTo('home')">הטבה למצטרפות חדשות</a> -->
             <a @click.prevent="scrollTo('recommandations')">המלצות</a>
             <a @click.prevent="scrollTo('contactForm')">השארת פרטים</a>
-            <a @click.prevent="scrollTo('gallery')">גלריה</a>
             <a @click.prevent="scrollTo('contact')">צרו קשר</a>
             <div class="link-container">
                 <a target="_blank" href="https://www.facebook.com/profile.php?id=61563921330158"><img class="logo"

@@ -1,29 +1,33 @@
 <template>
     <section id="types">
-        <div class="types-container">
-            <div class="type-container">
-                <img src="../assets/imgs/pilates.svg" alt="">
-                <h2>פילאטיס</h2>
-                <p>
-                    בסטודיו האינטימי והמעוצב שלנו, תוכלי ליהנות משיעורי פילאטיס בקבוצות קטנות עם יחס אישי, או להתאמן
-                    בעצמך
-                    בשקט וברוגע.
-                    האימון מחזק את שרירי הליבה, משפר את היציבה והגמישות, ותורם לתחושת קלילות ואיזון בגוף ובנפש.
-                    אנחנו מאמינות בתנועה מדויקת, הדרכה מקצועית ואווירה נעימה – שמייצרת תוצאות אמיתיות לאורך זמן.
-                </p>
-            </div>
+        <h3>סוגי אימונים</h3>
+        <p>כאן משלבים פילאטיס מכשירים ואימוני כוח מגוונים,
+            באווירה משפחתית, מדויקת ומקצועית,
+            כזו שמחזיקה לאורך זמן, ולא רק לאימון אחד, מתאים לכל הרמות.</p>
 
-            <div class="type-container">
-                <img src="../assets/imgs/gym.svg" alt="">
-                <h2>כח</h2>
-                <p>
-                    תוכנית האימונים שלנו לנשים מיועדת לבניית גוף חזק, חטוב ובריא – בדרך אלגנטית ומותאמת אישית.
-                    בשילוב ציוד מקצועי, הדרכה קשובה ותחושת פרטיות, תוכלי לעבוד על חיזוק הישבן, הירכיים, הבטן והגב – בקצב
-                    שלך
-                    ובנוחות.
-                    בין אם בשיעור מודרך או באימון עצמאי – כל אימון מקרב אותך לגרסה החזקה והבטוחה יותר של עצמך.
-                </p>
-            </div>
+        <button>לכל סוגי האימונים</button>
+        <div class="types-container">
+            <PurePower />
+            <SuperS />
+            <JumpingBoard />
+            <PilatesBar />
         </div>
     </section>
 </template>
+
+<script>
+import SuperS from "./TrainingTypes/SuperS.vue";
+import JumpingBoard from "./TrainingTypes/JumpingBoard.vue";
+import PilatesBar from "./TrainingTypes/PilatesBar.vue";
+import PurePower from "./TrainingTypes/PurePower.vue";
+
+export default {
+    name: "Types",
+    components: {
+        SuperS,
+        JumpingBoard,
+        PilatesBar,
+        PurePower,
+    }
+};
+</script>

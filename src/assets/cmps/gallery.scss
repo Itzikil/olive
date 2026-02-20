@@ -1,49 +1,59 @@
 .gallery-container {
-    display: flex;
+    width: 100%;
+    overflow: hidden; // Keeps the container clean
 
     .imgs-list {
         display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        align-items: center;
-        justify-content: center;
+        flex-wrap: nowrap; // Prevent wrapping to keep items in a row
+        gap: 15px;
+        padding-bottom: 10px; // Space for scrollbar if visible
 
+        // Enable horizontal scrolling and snap behavior
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch; // Smooth momentum on iOS
+
+        // Optional: Hide scrollbar for a cleaner look
+        &::-webkit-scrollbar {
+            // height: 22px;
+        }
         li {
-            // width: 200px;
-            // height: 200px;
-            // border-radius: 10px;
-
-            width: calc(100% / var(--columns) - 10px);
-            /* Dynamic width */
-            // max-width: 200px;
-            /* Limit max width */
-            // height: auto;
-            aspect-ratio: 1 / 1;
-            /* Makes images square */
-            object-fit: cover;
+            // Use flex-shrink: 0 so items don't squash
+            flex: 0 0 calc(100% / var(--visible-items) - 10px);
+            aspect-ratio: 3 / 4;
             border-radius: 15px;
             overflow: hidden;
+            scroll-snap-align: center; // The "magnet" effect
 
             img {
                 width: 100%;
                 height: 100%;
+                object-fit: cover;
+                display: block;
             }
         }
     }
 }
 
+// Mobile: Show 1.2 items (the .2 "peeks" at the next slide to hint it's a slider)
 @media (max-width: 600px) {
-    :root {
-        --columns: 3;
+    .imgs-list {
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 
-    /* 3 columns for medium screens */
+    :root {
+        --visible-items: 1.8;
+    }
 }
 
+// Desktop: Show 4 items
 @media (min-width: 600px) {
-    :root {
-        --columns: 4;
-    }
 
-    /* 4 columns for large screens */
+    :root {
+        --visible-items: 5;
+    }
 }

@@ -3,12 +3,13 @@
     <appHeader />
     <home />
     <about />
-    <types />
-    <schedule />
-    <plan/>
-    <recommandations />
-    <contactForm />
     <gallery />
+    <types />
+    <filler />
+    <schedule />
+    <recommandations />
+    <plan />
+    <contactForm />
     <contact />
     <a class="up-btn on-mobile" @click.prevent="scrollTo('home')"><img src="./assets/imgs/up-arrow.png" alt=""></a>
   </section>
@@ -25,6 +26,7 @@ import recommandations from './components/recommandations.vue'
 import contactForm from './components/contactForm.vue'
 import gallery from './components/gallery.vue'
 import contact from './components/contact.vue'
+import filler from './components/filler.vue'
 
 export default {
   data() {
@@ -42,9 +44,10 @@ export default {
     home,
     about,
     types,
+    filler,
     schedule,
-    plan,
     recommandations,
+    plan,
     contactForm,
     gallery,
     contact,

@@ -10,10 +10,40 @@
         align-items: center;
         text-align: center;
 
+
+        cursor: pointer;
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .arrow {
+            margin-left: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .arrow.open {
+            transform: rotate(180deg);
+        }
+
         img {
             width: 40px;
             height: 40px;
         }
+    }
+
+    .slide-enter-active,
+    .slide-leave-active {
+        transition: all 0.3s ease;
+        overflow: hidden;
+    }
+
+    .slide-enter-from,
+    .slide-leave-to {
+        opacity: 0;
+        transform: translateY(-10px);
     }
 
     @media (max-width: 650px) {
