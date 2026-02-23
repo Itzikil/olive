@@ -3,7 +3,7 @@
 
         <div @click="toggleDetails">
             <img src="../../assets/imgs/gym.svg" alt="">
-            <h2>Super S</h2>
+            <h2>Pure power</h2>
 
             <!-- Toggle Icon -->
             <span class="arrow" :class="{ open: isOpen }">⌄</span>

@@ -8,7 +8,9 @@
     <filler />
     <schedule />
     <recommandations />
+    <google />
     <plan />
+    <qna />
     <contactForm />
     <contact />
     <a class="up-btn on-mobile" @click.prevent="scrollTo('home')"><img src="./assets/imgs/up-arrow.png" alt=""></a>
@@ -27,6 +29,8 @@ import contactForm from './components/contactForm.vue'
 import gallery from './components/gallery.vue'
 import contact from './components/contact.vue'
 import filler from './components/filler.vue'
+import google from './components/google.vue'
+import qna from './components/q&a.vue'
 
 export default {
   data() {
@@ -47,9 +51,11 @@ export default {
     filler,
     schedule,
     recommandations,
+    google,
     plan,
     contactForm,
     gallery,
+    qna,
     contact,
   }
 }

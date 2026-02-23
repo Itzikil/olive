@@ -1,7 +1,7 @@
 <template>
     <section id="plan" class="plan-container">
-        <h2 class="section-title">בחרי את התוכנית שמתאימה לך</h2>
-
+        <h2 class="section-title">אופציות היכרות שלנו</h2>
+        <p>בחרי את דרך ההיכרות שמתאימה לך</p>
         <div class="plans-wrapper">
             <div class="plan-item" v-for="plan in getPlans()" :key="plan.id" :class="plan.class">
                 <h3>{{ plan.title }}</h3>

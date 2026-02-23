@@ -40,14 +40,13 @@
             }
 
             p {
-                // color: $clr3;
                 text-align: center;
             }
-
+            
             .price {
                 font-size: 1.3em;
                 font-weight: bold;
-                color: white;
+                color: $clr3;
                 background-color: $clr1;
                 padding: 10px 30px;
                 border-radius: 10px;
@@ -58,16 +57,17 @@
 
             button {
                 background-color: white;
-                color: $clr1;
+                color: $clr3;
                 padding: 10px 20px;
-                border-radius: 50px;
+                border-radius: 15px;
                 border: 2px solid $clr1;
                 cursor: pointer;
                 transition: background-color 0.3s;
                 font-weight: bold;
 
                 &:hover {
-                    background-color: darken($clr2, 10%);
+                    background-color: $clr2;
+                    // background-color: darken($clr2, 10%);
                 }
             }
 

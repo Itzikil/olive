@@ -1,12 +1,12 @@
 <template>
-    <section id="types">
+    <section id="types" class="types">
         <h3>סוגי אימונים</h3>
         <p>כאן משלבים פילאטיס מכשירים ואימוני כוח מגוונים,
             באווירה משפחתית, מדויקת ומקצועית,
             כזו שמחזיקה לאורך זמן, ולא רק לאימון אחד, מתאים לכל הרמות.</p>
 
-        <button>לכל סוגי האימונים</button>
-        <div class="types-container">
+        <button @click="typesOpen = !typesOpen">לכל סוגי האימונים</button>
+        <div class="types-container" v-if="typesOpen">
             <PurePower />
             <SuperS />
             <JumpingBoard />
@@ -23,6 +23,11 @@ import PurePower from "./TrainingTypes/PurePower.vue";
 
 export default {
     name: "Types",
+    data() {
+        return {
+            typesOpen: false
+        };
+    },
     components: {
         SuperS,
         JumpingBoard,
