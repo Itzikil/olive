@@ -13,6 +13,7 @@
     <qna />
     <contactForm />
     <contact />
+    <appFooter />
     <a class="up-btn on-mobile" @click.prevent="scrollTo('home')"><img src="./assets/imgs/up-arrow.png" alt=""></a>
   </section>
 </template>
@@ -31,6 +32,7 @@ import contact from './components/contact.vue'
 import filler from './components/filler.vue'
 import google from './components/google.vue'
 import qna from './components/q&a.vue'
+import appFooter from './components/appFooter.vue'
 
 export default {
   data() {
@@ -57,6 +59,7 @@ export default {
     gallery,
     qna,
     contact,
+    appFooter
   }
 }
 

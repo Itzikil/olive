@@ -1,0 +1,25 @@
+.footer-container {
+    background-color: $clr3;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 10px;
+    align-items: center;
+    padding-inline: 12%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    .footer-text {
+        grid-column: 3;
+        justify-self: center;
+        color: white;
+        font-weight: 600;
+    }
+
+    .footer-whatsapp {
+        grid-column: 1;
+        justify-self: center;
+    }
+}
