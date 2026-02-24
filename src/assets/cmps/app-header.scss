@@ -46,7 +46,7 @@
     .bar3 {
         width: 35px;
         height: 5px;
-        background-color: white;
+        background-color: $clr3;
         border-radius: 2px;
         transition: 0.4s;
     }
@@ -68,7 +68,7 @@
         transform: translate(0, -11px) rotate(45deg);
     }
 
-    @media(max-width:650px) {
+    @media(max-width:850px) {
         nav {
             flex-direction: column;
             position: absolute;
@@ -78,7 +78,7 @@
             padding: 30px;
             opacity: 1;
             transition: 1s;
-            border-end-end-radius: 10px;
+            border-end-end-radius: 5px;
         }
 
         .mobile-menu {

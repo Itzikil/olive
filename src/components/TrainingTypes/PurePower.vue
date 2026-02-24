@@ -6,17 +6,17 @@
             <h2>Pure power</h2>
 
             <!-- Toggle Icon -->
-            <span class="arrow" :class="{ open: isOpen }">⌄</span>
+            <!-- <span class="arrow" :class="{ open: isOpen }">⌄</span> -->
         </div>
 
-        <transition name="slide">
+        <!-- <transition name="slide">
             <p v-if="isOpen">
                 תוכנית האימונים שלנו לנשים מיועדת לבניית גוף חזק, חטוב ובריא – בדרך אלגנטית ומותאמת אישית.
                 בשילוב ציוד מקצועי, הדרכה קשובה ותחושת פרטיות, תוכלי לעבוד על חיזוק הישבן, הירכיים, הבטן והגב – בקצב שלך
                 ובנוחות.
                 בין אם בשיעור מודרך או באימון עצמאי – כל אימון מקרב אותך לגרסה החזקה והבטוחה יותר של עצמך.
             </p>
-        </transition>
+        </transition> -->
 
     </div>
 </template>
@@ -25,13 +25,17 @@
 export default {
     data() {
         return {
-            isOpen: false
+            isOpen: false,
+            desc: `2תוכנית האימונים שלנו לנשים מיועדת לבניית גוף חזק, חטוב ובריא – בדרך אלגנטית ומותאמת אישית.
+             בשילוב ציוד מקצועי, הדרכה קשובה ותחושת פרטיות, 
+             תוכלי לעבוד על חיזוק הישבן, הירכיים, הבטן והגב – בקצב שלך ובנוחות.
+              בין אם בשיעור מודרך או באימון עצמאי – כל אימון מקרב אותך לגרסה החזקה והבטוחה יותר של עצמך.`
         }
     },
     methods: {
         toggleDetails() {
-            this.isOpen = !this.isOpen
-        }
+            this.$emit('type-shown', this.desc);
+        },
     }
 }
 </script>

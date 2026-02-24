@@ -7,10 +7,15 @@
 
         <button @click="typesOpen = !typesOpen">לכל סוגי האימונים</button>
         <div class="types-container" v-if="typesOpen">
-            <PurePower />
-            <SuperS />
-            <JumpingBoard />
-            <PilatesBar />
+            <PurePower @type-shown="openType" />
+            <SuperS @type-shown="openType" />
+            <JumpingBoard @type-shown="openType" />
+            <PilatesBar @type-shown="openType" />
+        </div>
+
+        <div class="show-type" v-if="typeShown">
+            {{ typeShown }}
+            <button @click="typeShown = null">סגור</button>
         </div>
     </section>
 </template>
@@ -25,8 +30,15 @@ export default {
     name: "Types",
     data() {
         return {
-            typesOpen: false
+            typesOpen: false,
+            typeShown: null,
         };
+    },
+    methods: {
+        openType(desc) {
+            if (this.typeShown === desc) this.typeShown = null
+            else this.typeShown = desc;
+        }
     },
     components: {
         SuperS,

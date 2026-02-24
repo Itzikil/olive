@@ -8,6 +8,9 @@
                     src="@/assets/imgs/facebook.svg" alt="facebook"></a>
             <a target="_blank" href="https://www.instagram.com/o_live_studio/"><img class="logo"
                     src="@/assets/imgs/instagram.svg" alt="youtube"></a>
+            <a href="https://wa.me/972527743353" target="_blank">
+                <img src="../assets/imgs/whatsapp.svg" alt="WhatsApp" class="logo">
+            </a>
         </div>
     </section>
 </template>

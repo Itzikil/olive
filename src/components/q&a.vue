@@ -1,9 +1,9 @@
 <template>
-    <section class="faq" style="gap: 10px;">
+    <section id="qna" class="faq" style="gap: 10px;">
 
         <span style="display: flex; align-items: center; gap: 10px;">
             <h3>דברו איתנו</h3>
-            <a href="https://wa.me/972544444444" target="_blank">
+            <a href="https://wa.me/972527743353" target="_blank">
                 <img src="../assets/imgs/whatsapp.svg" alt="WhatsApp" style="height: 60px; width: 60px;">
             </a>
         </span>
