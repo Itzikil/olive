@@ -6,12 +6,6 @@
             <li v-for="img in imgs" :key="img">
                 <img :src="getImgUrl(img)" alt="" />
             </li>
-            <li v-for="img in imgs" :key="img">
-                <img :src="getImgUrl(img)" alt="" />
-            </li>
-            <li v-for="img in imgs" :key="img">
-                <img :src="getImgUrl(img)" alt="" />
-            </li>
         </ul>
     </section>
 </template>
@@ -20,15 +14,12 @@
 export default {
     data() {
         return {
-            imgs: ["1", "2", "3", "4", "5", "6", "7"]
+            imgs: Array.from({ length: 9 }, (_, i) => i + 1)
         }
     },
     methods: {
         getImgUrl(img) {
-            return new URL(
-                `../assets/imgs/gallery/${img}.jpg`,
-                import.meta.url
-            ).href
+            return `https://res.cloudinary.com/dtgejpwv9/image/upload/v1773246751/Olive/Gallery/gallery-${img}.jpg`
         }
     }
 }

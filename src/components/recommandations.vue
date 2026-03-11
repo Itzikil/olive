@@ -1,19 +1,11 @@
 <template>
     <section id="recommandations" class="recommandations-container">
         <h2>המלצות</h2>
-        <!-- <ul class="imgs-list">
+        <ul class="rec-container">
             <li v-for="img in imgs" :key="img">
-                <img :src="getImgUrl(img)" alt="" />
+                <img :src="getImgUrl(img)" alt="" :class="img === '3' ? 'rounded' : ''"/>
             </li>
-        </ul> -->
-        <div class="rec-container imgs-list">
-            <img src="../assets/imgs/whatsapp.avif" alt="">
-            <img src="../assets/imgs/whatsapp.avif" alt="">
-            <img src="../assets/imgs/whatsapp.avif" alt="">
-            <img src="../assets/imgs/whatsapp.avif" alt="">
-            <img src="../assets/imgs/whatsapp.avif" alt="">
-            <img src="../assets/imgs/whatsapp.avif" alt="">
-        </div>
+        </ul>
     </section>
 </template>
 
@@ -22,16 +14,16 @@
 export default {
     data() {
         return {
-            imgs: ["1", "2", "3", "4", "5", "6", "7"]
+            imgs: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22"]
         }
     },
     methods: {
         getImgUrl(img) {
             return new URL(
-                `../assets/imgs/recommands/${img}.jpg`,
+                `../assets/imgs/recommendations/rec${img}.jpg`,
                 import.meta.url
             ).href
-        }
+        },
     }
 }
 </script>
