@@ -8,7 +8,7 @@
             </video>
 
             <h3>O-LIVE</h3>
-            <h4>You o-live once</h4>
+            <h4>.You o-live once</h4>
         </div>
     </section>
 </template>

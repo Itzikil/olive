@@ -14,7 +14,7 @@
     <contactForm />
     <contact />
     <appFooter />
-    <a class="up-btn on-mobile" @click.prevent="scrollTo('home')"><img src="./assets/imgs/up-arrow.png" alt=""></a>
+    <!-- <a class="up-btn on-mobile" @click.prevent="scrollTo('home')"><img src="./assets/imgs/up-arrow.png" alt=""></a> -->
   </section>
 </template>
 
