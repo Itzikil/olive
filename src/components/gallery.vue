@@ -1,6 +1,6 @@
 <template>
     <section class="gallery-container" id="gallery">
-        <h2>Gallery</h2>
+        <!-- <h2>Gallery</h2> -->
 
         <ul class="imgs-list">
             <li v-for="img in imgs" :key="img">
