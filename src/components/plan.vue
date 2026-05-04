@@ -12,7 +12,9 @@
                     </li>
                 </ul>
                 <p class="price">{{ plan.price }}</p>
-                <button @click="selectPlan(plan.id)">הצטרפי עכשיו</button>
+                <button @click="selectPlan(plan.id)">
+                    <a :href="plan.link" target="_blank">הצטרפי עכשיו</a>
+                </button>
             </div>
         </div>
     </section>
@@ -27,36 +29,42 @@ export default {
                 {
                     id: "basic",
                     class: "basic",
-                    title: " 🌿 שיעור נסיון",
-                    description: " להגיע, להתנסות, להרגיש את האווירה והאימון.",
+                    title: " 🌿 אימון נסיון",
+                    description: " כניסה חד פעמי לאימון כוח או פילאטיס מכשירים לבחירה🤍",
                     features: [
-                        "שיעור ניסיון חד פעמי",
-                        "היכרות עם האווירה",
+                        "?",
+                        "?",
                     ],
-                    price: " 50 ₪"
+                    price: " 50 ₪",
+                    link: "https://Oo6Hi48y.web.arboxapp.com/group?whitelabel=Arbox&amp;lang=he&amp;location=17949&amp;referrer=PLUGIN&amp;filters=%7B%22trial%22%3A%22trial%22%2C%22pageName%22%3A%22group%22%7D"
                 },
                 {
                     id: "guided",
                     class: "guided",
-                    title: "🌿 חבילת היכרות",
-                    description: "שיעורים קבוצתיים אינטימיים בהדרכת מדריכה מוסמכת, לחיזוק, גמישות ותחושת רוגע.",
+                    title: "🌿 כרטיסיית היכרות 3 כניסות",
+                    description: "להכיר את הסטודיו באמת, לנסות אימונים שונים, מאמנות שונות ולהרגיש את האווירה.",
                     features: [
+                        "ללא התחייבות",
                         "תקף ל־3 שבועות מרגע הרכישה.",
-                        "מאפשר להכיר כמה סוגי אימונים.",
+                        "גישה מלאה לכל השיעורים  באפליקציה",
                     ],
-                    price: "3 אימונים ב 99 ₪"
+                    price: "99 ₪",
+                    link:"https://arbox.link/7cTV8DqR"
                 },
                 {
                     id: "premium",
                     class: "premium",
-                    title: "🌿 מנוי היכרות",
-                    description: "השילוב המושלם בין עצמאות, הדרכה וליווי אישי. למי שרוצה להתחייב לתהליך אמיתי ולראות שינוי.",
+                    title: "🌿 חודש היכרות 8 כניסות",
+                    description: `להיכנס לשגרה ולבדוק איך הסטודיו משתלב ביום־יום שלך.
+                    חודש נותן תמונה אמיתית של תהליך והתמדה 🤍
+                    `,
                     features: [
-                        "8 כניסות",
+                        "ללא התחייבות ",
                         "תקף ל־30 יום",
-                        "מסגרת התחלתית עם ליווי ויחס אישי",
+                        "גישה מלאה לכל השיעורים באפליקציה",
                     ],
-                    price: "349 ₪"
+                    price: "349 ₪",
+                    link:"https://arbox.link/P8n-N-jO"
                 }
             ];
         },

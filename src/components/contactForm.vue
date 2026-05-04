@@ -1,7 +1,7 @@
 <template>
     <!-- <section class="contact-form"> -->
     <section id="contactForm" class="contact-form">
-        <h2>השאירו פרטים ונחזור אליכם</h2>
+        <h2>השאירי פרטים ונחזור אליך בהקדם 🤍</h2>
         <form @submit.prevent="submitForm">
             <input type="text" v-model="form.name" placeholder="שם מלא" required />
             <input type="tel" v-model="form.phone" placeholder="מספר טלפון" required />
