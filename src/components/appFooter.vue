@@ -3,7 +3,7 @@
         <a href="https://wa.me/972527743353" target="_blank" class="footer-whatsapp" style="height: 30px; width: 30px;">
             <img src="../assets/imgs/whatsapp.svg" alt="whatsApp" style="height: 30px; width: 30px;">
         </a>
-        <a @click.prevent="scrollTo('contactForm')" class="footer-text">הרשמה להיכרות</a>
+        <a @click.prevent="scrollTo('plan')" class="footer-text">הרשמה להיכרות</a>
     </section>
 </template>
 
