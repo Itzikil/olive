@@ -6,7 +6,6 @@
             <div className="bar3"></div>
         </div>
         <div class="logo-container">
-            <h2>O-live</h2>
             <img src="../assets/imgs/olive.jpg" alt="logo" class="header-logo">
         </div>
         <nav :class="{ 'close-menu': !mobileMenu }">
