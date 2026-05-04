@@ -14,7 +14,7 @@
             <a @click.prevent="scrollTo('types')">סוגי אימון</a>
             <a @click.prevent="scrollTo('schedule')">מערכת שעות</a>
             <a @click.prevent="scrollTo('recommandations')">המלצות</a>
-            <a @click.prevent="scrollTo('plan')">מסלולים</a>
+            <a @click.prevent="scrollTo('plan')">מסלולי היכרות</a>
             <a @click.prevent="scrollTo('qna')">שאלות</a>
             <a @click.prevent="scrollTo('contactForm')">השארת פרטים</a>
             <!-- <a @click.prevent="scrollTo('contact')">צרו קשר</a> -->
