@@ -6,7 +6,7 @@
             <div className="bar3"></div>
         </div>
         <div class="logo-container">
-            <img src="../assets/imgs/olive.jpg" alt="logo" class="header-logo">
+            <img src="../assets/imgs/logo1.jpeg" alt="logo" class="header-logo">
         </div>
         <nav :class="{ 'close-menu': !mobileMenu }">
             <a @click.prevent="scrollTo('about')">עלינו</a>

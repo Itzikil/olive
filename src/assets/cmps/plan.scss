@@ -58,8 +58,8 @@
             button {
                 background-color: white;
                 color: $clr3;
-                padding: 10px 20px;
-                border-radius: 15px;
+                padding: 5px 20px;
+                border-radius: 25px;
                 border: 2px solid $clr1;
                 cursor: pointer;
                 transition: background-color 0.3s;
@@ -68,6 +68,12 @@
                 &:hover {
                     background-color: $clr2;
                     // background-color: darken($clr2, 10%);
+                }
+
+                a{
+                    color: inherit;
+                    text-decoration: none;
+                    font-weight: 600;
                 }
             }
 
