@@ -5,7 +5,7 @@
     <about />
     <gallery />
     <types />
-    <filler />
+    <!-- <filler /> -->
     <schedule />
     <recommandations />
     <google />
@@ -50,7 +50,7 @@ export default {
     home,
     about,
     types,
-    filler,
+    // filler,
     schedule,
     recommandations,
     google,
