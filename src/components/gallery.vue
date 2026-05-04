@@ -14,7 +14,8 @@
 export default {
     data() {
         return {
-            imgs: Array.from({ length: 9 }, (_, i) => i + 1)
+            // imgs: Array.from({ length: 9 }, (_, i) => i + 1)
+            imgs:[1,5,2,6,4,7,8,9]
         }
     },
     methods: {

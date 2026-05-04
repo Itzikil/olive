@@ -10,7 +10,7 @@
         </div>
         <nav :class="{ 'close-menu': !mobileMenu }">
             <a @click.prevent="scrollTo('about')">עלינו</a>
-            <a @click.prevent="scrollTo('gallery')">גלריה</a>
+            <!-- <a @click.prevent="scrollTo('gallery')">גלריה</a> -->
             <a @click.prevent="scrollTo('types')">סוגי אימון</a>
             <a @click.prevent="scrollTo('schedule')">מערכת שעות</a>
             <a @click.prevent="scrollTo('recommandations')">המלצות</a>
