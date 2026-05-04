@@ -27,31 +27,6 @@ export default {
         getPlans() {
             return [
                 {
-                    id: "basic",
-                    class: "basic",
-                    title: " 🌿 אימון נסיון",
-                    description: " כניסה חד פעמי לאימון כוח או פילאטיס מכשירים לבחירה🤍",
-                    features: [
-                        "?",
-                        "?",
-                    ],
-                    price: " 50 ₪",
-                    link: "https://Oo6Hi48y.web.arboxapp.com/group?whitelabel=Arbox&amp;lang=he&amp;location=17949&amp;referrer=PLUGIN&amp;filters=%7B%22trial%22%3A%22trial%22%2C%22pageName%22%3A%22group%22%7D"
-                },
-                {
-                    id: "guided",
-                    class: "guided",
-                    title: "🌿 כרטיסיית היכרות 3 כניסות",
-                    description: "להכיר את הסטודיו באמת, לנסות אימונים שונים, מאמנות שונות ולהרגיש את האווירה.",
-                    features: [
-                        "ללא התחייבות",
-                        "תקף ל־3 שבועות מרגע הרכישה.",
-                        "גישה מלאה לכל השיעורים  באפליקציה",
-                    ],
-                    price: "99 ₪",
-                    link:"https://arbox.link/7cTV8DqR"
-                },
-                {
                     id: "premium",
                     class: "premium",
                     title: "🌿 חודש היכרות 8 כניסות",
@@ -64,8 +39,31 @@ export default {
                         "גישה מלאה לכל השיעורים באפליקציה",
                     ],
                     price: "349 ₪",
-                    link:"https://arbox.link/P8n-N-jO"
-                }
+                    link: "https://arbox.link/P8n-N-jO"
+                },
+                {
+                    id: "guided",
+                    class: "guided",
+                    title: "🌿 כרטיסיית היכרות 3 כניסות",
+                    description: "להכיר את הסטודיו באמת, לנסות אימונים שונים, מאמנות שונות ולהרגיש את האווירה.",
+                    features: [
+                        "ללא התחייבות",
+                        "תקף ל־3 שבועות מרגע הרכישה.",
+                        "גישה מלאה לכל השיעורים  באפליקציה",
+                    ],
+                    price: "99 ₪",
+                    link: "https://arbox.link/7cTV8DqR"
+                },
+                {
+                    id: "basic",
+                    class: "basic",
+                    title: " 🌿 אימון נסיון",
+                    description: " כניסה חד פעמי לאימון כוח או פילאטיס מכשירים לבחירה🤍",
+                    features: [
+                    ],
+                    price: " 50 ₪",
+                    link: "https://Oo6Hi48y.web.arboxapp.com/group?whitelabel=Arbox&amp;lang=he&amp;location=17949&amp;referrer=PLUGIN&amp;filters=%7B%22trial%22%3A%22trial%22%2C%22pageName%22%3A%22group%22%7D"
+                },
             ];
         },
         selectPlan(planId) {
