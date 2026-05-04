@@ -13,14 +13,20 @@
         object-position: center center;
     }
 
-    h3 {
+    h3,
+    h4 {
         position: absolute;
         width: 100%;
-        bottom: 15%;
+        bottom: 25%;
         text-align: center;
         color: white;
         font-size: 3rem;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    h4 {
+        font-size: 1.7rem;
+        bottom: 20%;
     }
 
     /* Mobile Optimization */
