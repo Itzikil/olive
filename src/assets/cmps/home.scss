@@ -1,5 +1,5 @@
 .home-container {
-    margin-top: 50px;
+    margin-top: 60px;
     position: relative;
 
     // .hero {
@@ -8,9 +8,11 @@
     // }
 
     .hero-video {
-        width: 100%;
+        width: 98%;
         object-fit: cover;
         object-position: center center;
+        margin-inline: 1%;
+        border-radius: 20px;
     }
 
     h3,
@@ -25,14 +27,14 @@
     }
 
     h4 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         bottom: 20%;
     }
 
     /* Mobile Optimization */
     @media (max-width: 768px) {
         .hero-video {
-            height: 80vh;
+            height: 78vh;
             /* control mobile height */
             object-fit: cover;
             /* crop sides if needed */

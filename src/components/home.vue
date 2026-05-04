@@ -7,7 +7,7 @@
                     type="video/mp4" />
             </video>
 
-            <h3>Olive</h3>
+            <h3>O-LIVE</h3>
             <h4>You o-live once</h4>
         </div>
     </section>
