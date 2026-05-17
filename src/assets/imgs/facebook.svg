@@ -46,7 +46,8 @@
                      transform="translate(375.7163,120.5527)">
                     <path
                          d="m 0,0 c 8.134,0 14.73,6.596 14.73,14.73 l 0,237.434 c 0,8.137 -6.596,14.731 -14.73,14.731 l -237.433,0 c -8.137,0 -14.73,-6.594 -14.73,-14.731 l 0,-237.434 c 0,-8.134 6.593,-14.73 14.73,-14.73 L 0,0 Z"
-                         style="fill:#3b5998;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                         style="fill:#b2c198;
+                         fill-opacity:1;fill-rule:nonzero;stroke:none"
                          id="path4680" />
                 </g>
                 <g

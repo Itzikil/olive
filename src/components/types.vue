@@ -8,14 +8,14 @@
             <p>צוות המאמנות שלנו דואגות להתאים את האימון בדיוק אליך כדי לאפשר
                 לכל מתאמנת בין אם היא מתחילה או מנוסה לקבל אימון מדוייק מקצועי ומתאגר.</p>
         </div>
-        <button @click="typesOpen = !typesOpen">לכל סוגי האימונים</button>
-        <div class="types-container" v-if="typesOpen">
+        <!-- <button @click="typesOpen = !typesOpen">לכל סוגי האימונים</button> -->
+        <div class="types-container">
             <PurePower @type-shown="openType" />
             <SuperS @type-shown="openType" />
             <JumpingBoard @type-shown="openType" />
             <PilatesBar @type-shown="openType" />
         </div>
-
+        
         <div class="show-type" v-if="typeShown">
             {{ typeShown }}
             <button @click="typeShown = null">סגור</button>

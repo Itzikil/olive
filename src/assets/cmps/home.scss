@@ -8,11 +8,15 @@
     // }
 
     .hero-video {
-        width: 98%;
         object-fit: cover;
         object-position: center center;
-        margin-inline: 1%;
         border-radius: 10px;
+
+        width: 98vw;
+        height: 84vh;
+
+        display: block;
+        margin-inline: auto;
     }
 
     h3,
@@ -31,15 +35,28 @@
         bottom: 20%;
     }
 
+    .on-mobile {
+        display: none;
+    }
+
     /* Mobile Optimization */
     @media (max-width: 768px) {
         .hero-video {
-            height: 78vh;
+
+            // height: 78vh;
             /* control mobile height */
             object-fit: cover;
             /* crop sides if needed */
             object-position: center;
             /* show center */
+        }
+
+        .on-mobile {
+            display: block;
+        }
+
+        .on-desk {
+            display: none;
         }
     }
 
