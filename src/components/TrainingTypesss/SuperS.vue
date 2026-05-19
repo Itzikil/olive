@@ -2,7 +2,7 @@
     <div class="type-container">
 
         <div @click="toggleDetails">
-            <img src="../../assets/imgs/gym.svg" alt="">
+            <!-- <img src="../../assets/imgs/gym.svg" alt=""> -->
             <h2>Super S</h2>
         </div>
     </div>

@@ -2,7 +2,7 @@
     <div class="type-container">
 
         <div @click="toggleDetails">
-            <img src="../../assets/imgs/gym.svg" alt="">
+            <!-- <img src="../../assets/imgs/gym.svg" alt=""> -->
             <h2>Pure power</h2>
 
             <!-- Toggle Icon -->

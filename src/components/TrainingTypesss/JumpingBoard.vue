@@ -2,7 +2,7 @@
     <div class="type-container">
 
         <div @click="toggleDetails">
-            <img src="../../assets/imgs/pilates.svg" alt="">
+            <!-- <img src="../../assets/imgs/pilates.svg" alt=""> -->
             <h2>Jumping board</h2>
 
             <!-- Toggle Icon -->

@@ -4,74 +4,74 @@
     text-align: center;
     width: 100%;
 
-    .show-type {
-        position: absolute;
-        top: 25%;
-        width: 50%;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: $clr1;
-        padding: 25px;
-        border-radius: 5px;
-        z-index: 10;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
+    // .show-type {
+    //     position: absolute;
+    //     top: 25%;
+    //     width: 50%;
+    //     left: 50%;
+    //     transform: translateX(-50%);
+    //     background-color: $clr1;
+    //     padding: 25px;
+    //     border-radius: 5px;
+    //     z-index: 10;
+    //     display: flex;
+    //     flex-direction: column;
+    //     gap: 15px;
+    // }
 
     .types-container {
         width: 100%;
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        // flex-direction: row;
+        // justify-content: space-around;
         // gap: 50px;
         font-size: 0.9rem;
         gap: 30px;
         background-color: $clr1;
         padding: 10px;
         border-radius: 15px;
+        // flex: wrap;
+        // .type-container {
+        //     display: flex;
+        //     flex-direction: column;
+        //     align-items: center;
+        //     text-align: center;
+        //     // position: relative;
 
-        .type-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            // position: relative;
+        //     cursor: pointer;
 
-            cursor: pointer;
+        //     .header {
+        //         display: flex;
+        //         align-items: center;
+        //         gap: 10px;
+        //     }
 
-            .header {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-            }
+        //     .arrow {
+        //         margin-left: auto;
+        //         transition: transform 0.3s ease;
+        //     }
 
-            .arrow {
-                margin-left: auto;
-                transition: transform 0.3s ease;
-            }
+        //     .arrow.open {
+        //         transform: rotate(180deg);
+        //     }
 
-            .arrow.open {
-                transform: rotate(180deg);
-            }
+        //     img {
+        //         width: 40px;
+        //         height: 40px;
+        //     }
+        // }
 
-            img {
-                width: 40px;
-                height: 40px;
-            }
-        }
+        // .slide-enter-active,
+        // .slide-leave-active {
+        //     transition: all 0.3s ease;
+        //     overflow: hidden;
+        // }
 
-        .slide-enter-active,
-        .slide-leave-active {
-            transition: all 0.3s ease;
-            overflow: hidden;
-        }
-
-        .slide-enter-from,
-        .slide-leave-to {
-            opacity: 0;
-            transform: translateY(-10px);
-        }
+        // .slide-enter-from,
+        // .slide-leave-to {
+        //     opacity: 0;
+        //     transform: translateY(-10px);
+        // }
 
     }
 
@@ -81,6 +81,7 @@
         .types-container {
             flex-wrap: wrap;
             justify-content: center;
+            flex-direction: column;
 
             >.type-container {
                 width: 45%;
