@@ -3,7 +3,7 @@
     <div class="training-type" :class="{ open: isOpen }">
         <button class="training-header" @click="toggleDetails">
             <div class="title-wrapper">
-                <img v-if="icon" :src="icon" :alt="title">
+                <img v-if="icon" src="../assets/imgs/pilates.svg" :alt="title">
                 <h2>{{ title }}</h2>
             </div>
 
@@ -83,19 +83,21 @@ export default {
 
 .training-header {
     width: 100%;
-    border: none;
-    background: transparent;
-    display: flex;
-    align-items: center;
+    // border: none;
+    background: white;
+    // display: flex;
+    // align-items: center;
     justify-content: space-between;
     cursor: pointer;
     padding: 0;
+    box-shadow: none;
 }
 
 .title-wrapper {
     display: flex;
     align-items: center;
     gap: 0.8rem;
+    box-shadow: none;
 
     img {
         width: 34px;

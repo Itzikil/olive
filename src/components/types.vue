@@ -21,7 +21,7 @@
 
         <div class="types-container">
             <TrainingType v-for="type in trainingTypes" :key="type.title" :title="type.title"
-                :description="type.description" :icon="type.icon" />
+                :description="type.description" :icon="true" />
         </div>
     </section>
 </template>

@@ -22,14 +22,20 @@
     .types-container {
         width: 100%;
         display: flex;
-        // flex-direction: row;
-        // justify-content: space-around;
-        // gap: 50px;
         font-size: 0.9rem;
         gap: 30px;
         background-color: $clr1;
         padding: 10px;
         border-radius: 15px;
+
+        .training-type {
+            flex-wrap: wrap;
+
+            .arrow {
+                color: $clr2;
+            }
+        }
+
         // flex: wrap;
         // .type-container {
         //     display: flex;

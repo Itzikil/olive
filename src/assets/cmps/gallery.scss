@@ -18,6 +18,7 @@
         &::-webkit-scrollbar {
             // height: 22px;
         }
+
         li {
             // Use flex-shrink: 0 so items don't squash
             flex: 0 0 calc(100% / var(--visible-items) - 10px);
