@@ -2,7 +2,7 @@
     <section class="about-container" id="about">
         <div class="about-desc">
             <div>
-                <h2>קצת על הסטודיו 🌿</h2>
+                <h2>קצת על הסטודיו <img src="../assets/imgs/leaf.svg" alt="leaf"></h2>
                 <!-- <h2>קצת על הסטודיו 🌿 <img src="../assets/imgs/plant.png" alt=""></h2> -->
                 <p>סטודיו אוליב נולד מתוך רצון פשוט</p>
                 <p>להנגיש לכל אישה אימון מקצועי, מדוייק ובטוח.</p>

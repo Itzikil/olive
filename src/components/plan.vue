@@ -4,7 +4,7 @@
         <p>בחרי את דרך ההיכרות שמתאימה לך</p>
         <div class="plans-wrapper">
             <div class="plan-item" v-for="plan in getPlans()" :key="plan.id" :class="plan.class">
-                <h3>{{ plan.title }}</h3>
+                <h3>{{ plan.title }} <img src="../assets/imgs/leaf.svg" alt="" class="leaf-icon"></h3>
                 <p class="description">{{ plan.description }}</p>
                 <ul>
                     <li v-for="(feature, i) in plan.features" :key="i">
@@ -29,7 +29,7 @@ export default {
                 {
                     id: "premium",
                     class: "premium",
-                    title: "🌿 חודש היכרות 8 כניסות",
+                    title: " חודש היכרות 8 כניסות",
                     description: `להיכנס לשגרה ולבדוק איך הסטודיו משתלב ביום־יום שלך.
                     חודש נותן תמונה אמיתית של תהליך והתמדה 🤍
                     `,
@@ -44,7 +44,7 @@ export default {
                 {
                     id: "guided",
                     class: "guided",
-                    title: "🌿 כרטיסיית היכרות 3 כניסות",
+                    title: " כרטיסיית היכרות 3 כניסות",
                     description: "להכיר את הסטודיו באמת, לנסות אימונים שונים, מאמנות שונות ולהרגיש את האווירה.",
                     features: [
                         "ללא התחייבות",
@@ -57,7 +57,7 @@ export default {
                 {
                     id: "basic",
                     class: "basic",
-                    title: " 🌿 אימון נסיון",
+                    title: " אימון נסיון",
                     description: " כניסה חד פעמי לאימון כוח או פילאטיס מכשירים לבחירה🤍",
                     features: [
                     ],
