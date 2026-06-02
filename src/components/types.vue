@@ -21,7 +21,8 @@
 
         <div class="types-container">
             <TrainingType v-for="type in trainingTypes" :key="type.title" :title="type.title"
-                :description="type.description" :icon="true" />
+                :description="type.description" :icon="true" :is-open="openedType === type.title"
+                @toggle="toggleType(type.title)" />
         </div>
     </section>
 </template>
@@ -38,6 +39,7 @@ export default {
 
     data() {
         return {
+            openedType: null,
             trainingTypes: [
                 {
                     title: 'פילאטיס מכשירים',
@@ -106,6 +108,15 @@ export default {
 אימון מדויק, מחטב ומלא אנרגיה.`
                 }
             ]
+        }
+    },
+    methods: {
+        toggleType(title) {
+            this.openedType =
+                this.openedType === title
+                    ? null
+                    : title
+
         }
     }
 }

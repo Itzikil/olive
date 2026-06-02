@@ -19,6 +19,7 @@
     //     gap: 15px;
     // }
 
+
     .types-container {
         width: 100%;
         display: flex;
@@ -27,9 +28,11 @@
         background-color: $clr1;
         padding: 10px;
         border-radius: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
 
         .training-type {
-            flex-wrap: wrap;
+            height: fit-content;
 
             .arrow {
                 color: $clr2;

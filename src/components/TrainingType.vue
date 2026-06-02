@@ -1,9 +1,9 @@
 <!-- TrainingType.vue -->
 <template>
     <div class="training-type" :class="{ open: isOpen }">
-        <button class="training-header" @click="toggleDetails">
+        <button class="training-header" @click="$emit('toggle')">
             <div class="title-wrapper">
-                <img v-if="icon" src="../assets/imgs/pilates.svg" :alt="title">
+                <!-- <img v-if="icon" src="../assets/imgs/pilates.svg" :alt="title"> -->
                 <h2>{{ title }}</h2>
             </div>
 
@@ -20,32 +20,14 @@
     </div>
 </template>
 
+
 <script>
 export default {
     name: 'TrainingType',
     props: {
-        title: {
-            type: String,
-            required: true
-        },
-        description: {
-            type: String,
-            required: true
-        },
-        icon: {
-            type: String,
-            default: ''
-        },
-        defaultOpen: {
-            type: Boolean,
-            default: false
-        }
-    },
-
-    data() {
-        return {
-            isOpen: this.defaultOpen
-        }
+        title: String,
+        description: String,
+        isOpen: Boolean
     },
 
     computed: {
@@ -56,12 +38,9 @@ export default {
 
     methods: {
         toggleDetails() {
-            this.isOpen = !this.isOpen
+            // this.isOpen = !this.isOpen
 
-            this.$emit('toggle', {
-                title: this.title,
-                isOpen: this.isOpen
-            })
+            this.$emit('toggle', this.title)
         }
     }
 }
